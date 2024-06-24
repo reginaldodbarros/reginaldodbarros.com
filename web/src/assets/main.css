@@ -1,0 +1,72 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px;
+    padding: 0px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.col{     
+    padding: 0.5rem;
+}
+
+.col-3 {
+    flex-basis: 33.3333333%;
+}
+
+@media screen and (max-width: 990px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    .col, .col-3 {
+        flex-basis: 100%;
+    }
+}
+
+.col {
+    display: block;
+    width: 100%;
+}
+
+.card {
+    padding:20px;
+    border-radius: 3px;
+    border: 1px solid #ccc;    
+}
+
+.card-title {
+    text-align: center;
+}
+
+.form-group{
+    text-align: left;    
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+}
+
+input.form-control {
+    height: 1.5rem;
+}
+
+.btn {
+    height: 1.6rem;    
+}
+
+.center {
+    text-align: center;
+}
+
+.error {
+    color: rgb(127, 2, 2);
+}
